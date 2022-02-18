@@ -5,7 +5,7 @@
 #ifndef _INC_WCONSOLE    //don't let this file be included
 #define _INC_WCONSOLE    //twice in the same source file
 
-#include <windows.h>     //for Windows console functions
+#include <Windows.h>     //for Windows console functions
 #include <conio.h>       //for kbhit(), getche()
 #include <math.h>        //for sin, cos
 
