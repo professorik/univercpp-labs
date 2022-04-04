@@ -17,7 +17,10 @@ int main(){
     a = c;
     d = a * 5 * 5;
     cout << c << "\n" << d << "\n";
-    Time superTotal = a + b + c + d;
+    Time q = Time(-1, 0);
+    Time superTotal = a + b + c + d + q;
     cout << superTotal << "\n";
+    superTotal = superTotal * 0.5;
+    cout << superTotal << "\n" << Time::getCount() << endl;
     return 0;
 }

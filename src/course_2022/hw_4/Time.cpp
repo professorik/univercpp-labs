@@ -10,12 +10,12 @@ Time::Time(int h, int m) {
     hours = h;
     minutes = m;
     correctTime(hours, minutes);
-    std::cout << "Created new Time instance. Total amount: " << count << std::endl;
+    std::cout << "Created. Total amount: " << count << std::endl;
 }
 
 Time::~Time() {
     --count;
-    std::cout << "Deleted new Time instance. Total amount: " << count << std::endl;
+    std::cout << "Deleted. Total amount: " << count << std::endl;
 }
 
 void Time::addMinutes(int m) {
@@ -32,8 +32,9 @@ int Time::getCount() {
 }
 
 Time Time::operator*(float k) const {
-    int _minutes = k * this->minutes;
-    int _hours = k * this->hours;
+    int _minutes = minutes + hours * 60;
+    _minutes *= k;
+    int _hours = 0;
     correctTime(_hours, _minutes);
     return Time(_hours, _minutes);
 }
