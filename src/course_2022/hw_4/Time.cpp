@@ -32,18 +32,11 @@ int Time::getCount() {
 }
 
 Time Time::operator*(float k) const {
-    int _minutes = minutes + hours * 60;
-    _minutes *= k;
-    int _hours = 0;
-    correctTime(_hours, _minutes);
-    return Time(_hours, _minutes);
+    return Time(0, k*(minutes + hours * 60));
 }
 
 Time Time::operator+(Time &t) const {
-    int _minutes = t.minutes + this->minutes;
-    int _hours = t.hours + this->hours;
-    correctTime(_hours, _minutes);
-    return Time(_hours, _minutes);
+    return Time(t.hours + this->hours, t.minutes + this->minutes);
 }
 
 std::ostream &operator<<(std::ostream &output, Time &time) {
