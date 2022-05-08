@@ -24,3 +24,6 @@ add_executable(tas2 src/course_2022/hw_2/task.cpp src/course_2022/hw_2/Complex.c
 add_executable(tas3 src/course_2022/hw_3/task.cpp src/course_2022/hw_3/Train.cpp src/course_2022/hw_3/Train.h)
 add_executable(tas4 src/course_2022/hw_4/task.cpp src/course_2022/hw_4/Time.cpp src/course_2022/hw_4/Time.h)
 add_executable(tas5 src/course_2022/hw_5/task.cpp)
+add_executable(tsp src/Competition/main.cpp)
+add_executable(tas6 src/course_2022/hw_6/main.cpp src/course_2022/hw_6/Circle.cpp src/course_2022/hw_6/Circle.h
+        src/course_2022/hw_6/Figure.cpp src/course_2022/hw_6/Figure.h  src/course_2022/hw_6/Square.cpp src/course_2022/hw_6/Square.h src/course_2022/hw_6/Equilateral.cpp src/course_2022/hw_6/Equilateral.h src/course_2022/hw_6/Rectangle.cpp src/course_2022/hw_6/Rectangle.h)
