@@ -27,3 +27,5 @@ add_executable(tas5 src/course_2022/hw_5/task.cpp)
 add_executable(tsp src/Competition/main.cpp)
 add_executable(tas6 src/course_2022/hw_6/main.cpp src/course_2022/hw_6/Circle.cpp src/course_2022/hw_6/Circle.h
         src/course_2022/hw_6/Figure.cpp src/course_2022/hw_6/Figure.h  src/course_2022/hw_6/Square.cpp src/course_2022/hw_6/Square.h src/course_2022/hw_6/Equilateral.cpp src/course_2022/hw_6/Equilateral.h src/course_2022/hw_6/Rectangle.cpp src/course_2022/hw_6/Rectangle.h)
+add_executable(tas7 src/course_2022/hw_7/task7.cpp)
+add_executable(tas8 src/course_2022/hw_8/task8.cpp src/course_2022/hw_8/task8.cpp)
